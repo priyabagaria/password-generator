@@ -11,22 +11,22 @@ def random_pass():
 	skills = []
 	names = []
 
-	with open("./adjectives.txt","r") as words:
+	with open("./dataset/adjectives.txt","r") as words:
 		 for line in words:
 			  adjectives.append(line.rstrip())
 		 words.close()
 
-	with open("./animals.txt","r") as words:
+	with open("./dataset/animals.txt","r") as words:
 		for line in words:
 			animals.append(line.rstrip())
 		words.close()
 
-	with open("./skills.txt","r") as words:
+	with open("./dataset/skills.txt","r") as words:
 		 for line in words:
 			  skills.append(line.rstrip())
 		 words.close()
 
-	with open("./names.txt","r") as words:
+	with open("./dataset/names.txt","r") as words:
 		 for line in words:
 			  names.append(line.rstrip())
 		 words.close()
